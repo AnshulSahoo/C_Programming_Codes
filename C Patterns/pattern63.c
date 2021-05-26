@@ -1,13 +1,13 @@
 /*
-pattern-60
+pattern-63
 --------------------
-      3
-    3 2
-  3 2 1
-3 2 1 0
-  3 2 1
-    3 2
-      3 
+      D
+    D C
+  D C B
+D C B A
+  D C B
+    D C
+      D 
 --------------------
 */
 
@@ -27,7 +27,7 @@ int main()
     }
     for(k=n-1;k>=i;k--)
     {
-      printf("%d ",k);
+      printf("%c ",k+65);
     }
     printf("\n");
   }
@@ -41,7 +41,7 @@ int main()
     }
     for(k=n-1;k>=i;k--)
     {
-      printf("%d ",k);
+      printf("%c ",k+65);
     } 
     printf("\n"); 
   }
