@@ -21,9 +21,9 @@ int main()
     //Enter first matrix
     printf("Enter the Elements of first matrix of size 3 X 3 : \n");
 
-    for(row=1;row<=i;row++)
+    for(row=0;row<i;row++)
     {
-        for(col=1;col<=j;col++)
+        for(col=0;col<j;col++)
         {
             scanf("%d", &A[row][col]);
         }
@@ -32,9 +32,9 @@ int main()
     //Enter second matrix
     printf("Enter the Elements of second matrix of size 3 X 3 : \n");
 
-    for(row=1;row<=i;row++)
+    for(row=0;row<i;row++)
     {
-        for(col=1;col<=j;col++)
+        for(col=0;col<j;col++)
         {
             scanf("%d", &B[row][col]);
         }
@@ -43,9 +43,9 @@ int main()
     //Print first matrix
     printf("Entered first matrix of size 3 X 3 : \n");
 
-    for(row=1;row<=i;row++)
+    for(row=0;row<i;row++)
     {
-        for(col=1;col<=j;col++)
+        for(col=0;col<j;col++)
         {
             printf("%d\t",A[row][col]);
         }
@@ -55,9 +55,9 @@ int main()
     //Print second matrix
     printf("Entered second matrix of size 3 X 3 : \n");
 
-    for(row=1;row<=i;row++)
+    for(row=0;row<i;row++)
     {
-        for(col=1;col<=j;col++)
+        for(col=0;col<j;col++)
         {
             printf("%d\t",B[row][col]);
         }
@@ -65,9 +65,9 @@ int main()
     }
 
     //Subtraction of matrix
-    for(row=1;row<=i;row++)
+    for(row=0;row<i;row++)
     {
-        for(col=1;col<=j;col++)
+        for(col=0;col<j;col++)
         {
             subtraction[row][col] = A[row][col] - B[row][col];
         }
@@ -76,9 +76,9 @@ int main()
     //Printing result
     printf("The subtracted of matrix of size 3 X 3 : \n");
     
-    for(row=1;row<=i;row++)
+    for(row=0;row<i;row++)
     {
-        for(col=1;col<=j;col++)
+        for(col=0;col<j;col++)
         {
             printf("%d\t", subtraction[row][col]);
         }
