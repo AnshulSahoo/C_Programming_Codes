@@ -1,7 +1,7 @@
 //WAP in C to add two matrix
 
 #include<stdio.h>
-#define SIZE 3
+#define SIZE 5
 
 int main()
 {
