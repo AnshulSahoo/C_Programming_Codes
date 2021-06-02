@@ -5,61 +5,62 @@
 
 int main()
 {
-    int i, j, row, col;
-    int A[SIZE][SIZE];
-    int B[SIZE][SIZE];
-    int addition[SIZE][SIZE];
+    int i, j; 
+    int row, col;
+    int firstMatrix[SIZE][SIZE];
+    int secondMatrix[SIZE][SIZE];
+    int sumMatrix[SIZE][SIZE];
 
     //Enter number of rows
-    printf("Enter the Number of rows : ");
+    printf("\nEnter the Number of rows : ");
     scanf("%d",&i);
 
     //Enter number of columns
-    printf("Enter the Number of columns : ");
+    printf("\nEnter the Number of columns : ");
     scanf("%d",&j);
 
     //Enter first matrix
-    printf("Enter the Elements of first matrix of size 3 X 3 : \n");
+    printf("\nEnter the Elements of first matrix of size 3 X 3 : \n");
 
     for(row=0;row<i;row++)
     {
         for(col=0;col<j;col++)
         {
-            scanf("%d", &A[row][col]);
+            scanf("%d", &firstMatrix[row][col]);
         }
     }
 
     //Enter second matrix
-    printf("Enter the Elements of second matrix of size 3 X 3 : \n");
+    printf("\nEnter the Elements of second matrix of size 3 X 3 : \n");
 
     for(row=0;row<i;row++)
     {
         for(col=0;col<j;col++)
         {
-            scanf("%d", &B[row][col]);
+            scanf("%d", &secondMatrix[row][col]);
         }
     }
 
     //Print first matrix
-    printf("Entered first matrix of size 3 X 3 : \n");
+    printf("\nEntered first matrix of size 3 X 3 : \n");
 
     for(row=0;row<i;row++)
     {
         for(col=0;col<j;col++)
         {
-            printf("%d\t",A[row][col]);
+            printf("%d\t",firstMatrix[row][col]);
         }
         printf("\n\n");
     }
 
     //Print second matrix
-    printf("Entered second matrix of size 3 X 3 : \n");
+    printf("\nEntered second matrix of size 3 X 3 : \n");
 
     for(row=0;row<i;row++)
     {
         for(col=0;col<j;col++)
         {
-            printf("%d\t",B[row][col]);
+            printf("%d\t",secondMatrix[row][col]);
         }
         printf("\n\n");
     }
@@ -69,18 +70,18 @@ int main()
     {
         for(col=0;col<j;col++)
         {
-            addition[row][col] = A[row][col] + B[row][col];
+            sumMatrix[row][col] = firstMatrix[row][col] + secondMatrix[row][col];
         }
     }
 
     //Printing result
-    printf("The sum of matrix of size 3 X 3 : \n");
+    printf("\nThe sum of matrix of size 3 X 3 : \n");
     
     for(row=0;row<i;row++)
     {
         for(col=0;col<j;col++)
         {
-            printf("%d\t", addition[row][col]);
+            printf("%d\t", sumMatrix[row][col]);
         }
         printf("\n\n");
     }
