@@ -20,7 +20,7 @@ int main()
     scanf("%d",&j);
 
     //Enter first matrix
-    printf("\nEnter the Elements of first matrix of size 3 X 3 : \n");
+    printf("\nEnter the Elements of first matrix of size %d X %d : \n",i,j);
 
     for(row=0;row<i;row++)
     {
@@ -31,7 +31,7 @@ int main()
     }
 
     //Enter second matrix
-    printf("\nEnter the Elements of second matrix of size 3 X 3 : \n");
+    printf("\nEnter the Elements of second matrix of size %d X %d : \n",i,j);
 
     for(row=0;row<i;row++)
     {
@@ -42,7 +42,7 @@ int main()
     }
 
     //Print first matrix
-    printf("\nEntered first matrix of size 3 X 3 : \n");
+    printf("\nEntered first matrix of size %d X %d : \n",i,j);
 
     for(row=0;row<i;row++)
     {
@@ -54,7 +54,7 @@ int main()
     }
 
     //Print second matrix
-    printf("\nEntered second matrix of size 3 X 3 : \n");
+    printf("\nEntered second matrix of size %d X %d : \n",i,j);
 
     for(row=0;row<i;row++)
     {
@@ -65,7 +65,7 @@ int main()
         printf("\n\n");
     }
 
-    //Addition of matrix
+    //Subtraction of matrix
     for(row=0;row<i;row++)
     {
         for(col=0;col<j;col++)
@@ -75,7 +75,7 @@ int main()
     }
 
     //Printing result
-    printf("\nThe sum of matrix of size 3 X 3 : \n");
+    printf("\nThe subrtarction of matrix of size %d X %d : \n",i,j);
     
     for(row=0;row<i;row++)
     {
