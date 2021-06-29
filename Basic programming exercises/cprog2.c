@@ -1,6 +1,6 @@
 //Write a C program to enter two numbers and find their sum.
 #include<stdio.h>
-inta main()
+int main()
 {
     int num1, num2, sum;
 
